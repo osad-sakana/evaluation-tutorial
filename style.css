@@ -1,0 +1,25 @@
+h1, h2, h3, h4, p, li, span, div, td, th {
+  font-family: 'BIZ UDGothic', sans-serif;
+}
+
+code, pre, .slidev-code {
+  font-family: '0xProto', monospace !important;
+}
+
+.shiki, .shiki pre, pre.shiki, .slidev-code.shiki,
+.shiki span, .shiki pre span, pre.shiki span {
+  font-family: '0xProto', monospace !important;
+}
+
+.shiki, .shiki pre, pre.shiki, .slidev-code.shiki {
+  font-size: 32px !important;
+}
+
+.big-eval-code .shiki,
+.big-eval-code pre,
+.big-eval-code code,
+.big-eval-code .slidev-code,
+.big-eval-code span {
+  font-size: 86px !important;
+  line-height: 1.2 !important;
+}
