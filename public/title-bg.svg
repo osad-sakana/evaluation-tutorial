@@ -1,0 +1,50 @@
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1b1f3b"/>
+      <stop offset="55%" stop-color="#232a5c"/>
+      <stop offset="100%" stop-color="#2b3a73"/>
+    </linearGradient>
+    <radialGradient id="spot" cx="50%" cy="42%" r="60%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+
+  <g fill="none" stroke="#8fd3e8" stroke-width="6" stroke-linecap="round" opacity="0.35">
+    <path d="M260 180 h90 M305 135 v90"/>
+    <path d="M1620 210 h90"/>
+    <path d="M180 760 h90 M225 715 v90"/>
+    <path d="M1700 840 h90"/>
+    <path d="M760 120 l64 64 M824 120 l-64 64"/>
+    <path d="M1500 900 l64 64 M1564 900 l-64 64"/>
+  </g>
+
+  <g fill="#ffd479" opacity="0.4">
+    <text x="120" y="500" font-size="150" font-family="serif">÷</text>
+    <text x="1560" y="560" font-size="170" font-family="serif">×</text>
+    <text x="880" y="960" font-size="140" font-family="serif">=</text>
+    <text x="1400" y="260" font-size="130" font-family="serif">=</text>
+    <text x="380" y="920" font-size="150" font-family="serif">×</text>
+  </g>
+
+  <g fill="#ffffff" opacity="0.55">
+    <path d="M300 300 l10 26 26 10 -26 10 -10 26 -10 -26 -26 -10 26 -10 z"/>
+    <path d="M1700 480 l8 20 20 8 -20 8 -8 20 -8 -20 -20 -8 20 -8 z"/>
+    <path d="M1500 150 l7 18 18 7 -18 7 -7 18 -7 -18 -18 -7 18 -7 z"/>
+    <path d="M220 850 l7 18 18 7 -18 7 -7 18 -7 -18 -18 -7 18 -7 z"/>
+    <path d="M1100 920 l6 16 16 6 -16 6 -6 16 -6 -16 -16 -6 16 -6 z"/>
+    <path d="M980 200 l6 16 16 6 -16 6 -6 16 -6 -16 -16 -6 16 -6 z"/>
+  </g>
+
+  <g stroke="#8fd3e8" stroke-width="7" fill="none" opacity="0.4" stroke-linecap="round">
+    <path d="M560 640 h140"/>
+    <path d="M660 605 l40 35 -40 35"/>
+    <path d="M1230 340 h140"/>
+    <path d="M1330 305 l40 35 -40 35"/>
+  </g>
+
+  <rect width="1920" height="1080" fill="url(#spot)"/>
+</svg>

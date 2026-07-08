@@ -1,6 +1,6 @@
 ---
 theme: seriph
-background: https://cover.sli.dev
+background: /title-bg.svg
 title: 数式の「変身」のひみつ
 info: |
   ## 数式の「変身」のひみつ
