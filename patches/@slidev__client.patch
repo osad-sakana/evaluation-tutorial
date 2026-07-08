@@ -1,0 +1,32 @@
+diff --git a/logic/slides.ts b/logic/slides.ts
+index cb156a18af745ff4c2028bc6515683ec2e45c277..630992cfc356897ac2a3831b6c978d2fd01697af 100644
+--- a/logic/slides.ts
++++ b/logic/slides.ts
+@@ -21,7 +21,7 @@ export function getSlidePath(
+     route = getSlide(route)!
+   const no = route.meta.slide?.frontmatter.routeAlias ?? route.no
+   const path = exporting ? `export/${no}` : presenter ? `presenter/${no}` : `${no}`
+-  return `${import.meta.env.BASE_URL}${path}`
++  return path
+ }
+ 
+ export function useIsSlideActive() {
+diff --git a/pages/overview.vue b/pages/overview.vue
+index 279bc3c1514d2f50b917b73eb61d4bbbb7c44a28..13fbbf3da3da5d48205f1abb2580fa2e086fd9f2 100644
+--- a/pages/overview.vue
++++ b/pages/overview.vue
+@@ -107,12 +107,12 @@ function checkActiveBlocks() {
+ function openSlideInNewTab(path: string) {
+   const a = document.createElement('a')
+   a.target = '_blank'
+-  a.href = pathPrefix + path.slice(1)
++  a.href = pathPrefix + path
+   a.click()
+ }
+ 
+ function openSlideInBrowser(path: string) {
+-  const url = new URL(pathPrefix + path.slice(1), location.href).href
++  const url = new URL(pathPrefix + path, location.href).href
+   if (isEmbedded.value) {
+     window.parent.postMessage({
+       target: 'slidev',
